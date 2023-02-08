@@ -8,5 +8,7 @@ setup(
     author='Serhii Melnyk',
     author_email='msprivate68@gmail.com',
     license='MIT',
-    packages=find_namespace_packages()
+    packages=find_namespace_packages(),
+    install_requires=['markdown'],
+    entry_points={'console_scripts': ['clean folder = clean_folder.clean_folder:clean_folder']}
 )
